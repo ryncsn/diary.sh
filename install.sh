@@ -7,7 +7,7 @@ fi
 DEST="$HOME/.local/bin"
 
 if [ ! -d $DEST ]; then
-    echo "Expect to be installed to $DEST."
+    echo "Expected to be installed to $DEST."
     echo "But $DEST not found."
 fi
 

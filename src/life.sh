@@ -21,8 +21,16 @@ case $1 in
         DAY=$(date --date="yesterday" +"%Y-%m-%d")
         $EDITOR $LOG/${DAY}.log
         ;;
+    "log" )
+        for i in $LOG/*;
+        do
+            echo "----------${i##*/}----------";
+            cat $i;
+            echo -e "\n\n\n";
+        done | less
+        ;;
     * )
-        echo "$0"
+        echo "a small tool give you manage diary in terminal"
         ;;
 esac
 
