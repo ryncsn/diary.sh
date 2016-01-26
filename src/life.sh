@@ -22,10 +22,10 @@ case $1 in
         $EDITOR $LOG/${DAY}.log
         ;;
     "log" )
-        for i in $LOG/*;
+        for i in $(ls $LOG | sort -r);
         do
             echo "----------${i##*/}----------";
-            cat $i;
+            cat $LOG/$i;
             echo -e "\n\n\n";
         done | less
         ;;
