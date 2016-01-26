@@ -30,7 +30,12 @@ case $1 in
         done | less
         ;;
     * )
-        echo "a small tool give you manage diary in terminal"
+        echo "A small tool help you manage diary in terminal"
+        echo "Usage:"
+        echo "  life [today|yestarday|log]"
+        echo "  today: Write your diary/log for today."
+        echo "  yesterday: Write/view you diary/log for yesterday."
+        echo "  log: View all you diary/logs"
         ;;
 esac
 
