@@ -11,5 +11,4 @@ if [ ! -d $DEST ]; then
     echo "But $DEST not found."
 fi
 
-cp ./src/life.sh $DEST/life
-
+cp ./src/diary.sh $DEST/diary.sh

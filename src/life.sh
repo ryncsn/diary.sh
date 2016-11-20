@@ -4,7 +4,7 @@ if [ -z "$HOME" ]; then
     exit 1;
 fi
 
-DIR="$HOME/life"
+DIR="$HOME/diary.sh"
 LOG="$DIR/log"
 EDITOR='vim'
 
@@ -32,7 +32,7 @@ case $1 in
     * )
         echo "A small tool help you manage diary in terminal"
         echo "Usage:"
-        echo "  life [today|yestarday|log]"
+        echo "  diary.sh [today|yestarday|log]"
         echo "  today: Write your diary/log for today."
         echo "  yesterday: Write/view you diary/log for yesterday."
         echo "  log: View all you diary/logs"
